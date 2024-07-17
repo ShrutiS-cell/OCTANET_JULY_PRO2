@@ -1,0 +1,84 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url('img14.jpeg')no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    margin:  0;
+    text-align: flex-start;
+    color: whitesmoke;
+}
+
+.container{
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    margin-top: -0.5vh;
+}
+
+.input-container,
+.filter-container {
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255,0.8);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+input[type="text"] {
+    padding: 3px 7px;
+    width: 50%;
+    font-size: 16px;
+    background:rgb(255, 255, 255,0.6);
+    border: 1px solid #ccc;
+    color: black;
+}
+button {
+    padding: 2px 5px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: rgba(140, 14, 123, 0.925);
+    color: white;
+    border: none;
+    margin: 2px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(226,226,226,0.8);
+    padding: 1px 4px;
+    margin: 5px 0;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    color: rgb(48, 20, 20);
+}
+li.completed {
+    text-decoration: line-through;
+    color: wheat;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background: rgba(75, 75, 75, 0.461);
+}
+button.delete{
+    background-color: rgb(136, 193, 22);
+    padding: 2px 8px;
+    border: none;
+    border-radius: 3px;
+    color: #ddd;
+    cursor: pointer;
+}
+button.delete:hover{
+    background-color: rgb(153, 203, 52);
+}
+.filter-button.active {
+    background-color: rgb(7, 9, 76);
+    color: #f9f9f9;
+}
